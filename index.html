@@ -11,7 +11,7 @@
       <li><a href="#headers">HTML Headers</a></li>
       <li><a href="#typography">HTML Typography</a></li>
       <li><a href="#formatting">HTML Formatting</a></li>
-      <li><a href="">HTML Media</a></li>
+      <li><a href="#media">HTML Media</a></li>
       <li><a href="">HTML Table</a></li>
       <li><a href="">HTML Forms</a></li>
     </ul>
@@ -304,6 +304,92 @@ and break lines.
             </td>
             <td>
               <p>This is a <sup>superscripted</sup> text.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media">
+      <h2>HTML Media <a href="#top">(top)</a></h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th><strong>Description</strong></th>
+            <th><strong>Markup</strong></th>
+            <th><strong>Output</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Image</td>
+            <td>
+              <code>&lt;img src="source.jpg" alt="alternate text"&gt;</code>
+            </td>
+            <td>
+              <img src=" https://picsum.photos/320/240" alt="alternate text" />
+            </td>
+          </tr>
+          <tr>
+            <td>Video</td>
+            <td>
+              <code
+                >&lt;video width="320" height="240" controls&gt; <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="source.mp4"
+                type="video/mp4"&gt; <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="source,ogg"
+                type="video/ogg"&gt; <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;Your browser does not support the audio
+                element. <br />
+                &lt;/video&gt;
+              </code>
+            </td>
+            <td>
+              <video width="320" height="240" controls>
+                <source
+                  src=" https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                  type="video/mp4"
+                />
+
+                Your browser does not support the video tag.
+              </video>
+            </td>
+          </tr>
+          <tr>
+            Audio
+          </tr>
+          <tr>
+            <td>Audio</td>
+            <td>
+              <code
+                >&lt;audio controls&gt; <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="source.ogg"
+                type="audio/ogg"&gt; <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="source,ogg"
+                type="audio/mpeg"&gt; <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;Your browser does not support the audio
+                element. <br />
+                &lt;/audio&gt;
+              </code>
+            </td>
+            <td>
+              <audio controls>
+                <source
+                  src=" https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov"
+                  type="audio/mpeg"
+                />
+
+                Your browser does not support the video tag.
+              </audio>
+            </td>
+          </tr>
+          <tr>
+            <td>IFrame</td>
+            <td><code>&lt;iframe src="url"&gt;&lt;/iframe&gt;</code></td>
+            <td>
+              <iframe
+                src=" https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRGfdqqK0&#x2F;a4g7Fq1ZCb-A6DrYhHa-rQ&#x2F;view?embed"
+              ></iframe>
             </td>
           </tr>
         </tbody>
