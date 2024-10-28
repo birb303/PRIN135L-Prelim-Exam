@@ -10,14 +10,17 @@ body {
   font-family: "roboto", sans-serif;
 }
 
-.sticky {
+.fixed {
   border-right: 2px solid #9ea5a5;
-  width: 15%;
-  /* position: sticky; */
-  flex-grow: 1;
+  min-width: 400px;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
-.sticky #top {
+.fixed #top {
   text-align: center;
   padding: 15px 0;
   font-weight: 400;
@@ -47,7 +50,7 @@ body {
 .container {
   flex-grow: 2;
   padding: 0 20px;
-  width: 85%;
+  margin-left: 408px;
 }
 
 table {
@@ -67,4 +70,8 @@ td {
 .table-header {
   padding: 20px 0;
   font-weight: 400;
+}
+
+footer {
+  margin: 10px;
 }
