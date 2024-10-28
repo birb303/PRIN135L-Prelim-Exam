@@ -62,7 +62,7 @@ table {
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid #9ea5a5;
   border-collapse: collapse;
   padding: 10px;
 }
@@ -73,5 +73,5 @@ td {
 }
 
 footer {
-  margin: 10px;
+  margin: 25px;
 }
