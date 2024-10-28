@@ -12,13 +12,14 @@ body {
 
 .sticky {
   border-right: 2px solid #9ea5a5;
-  max-width: 350px;
-  position: sticky;
+  width: 15%;
+  /* position: sticky; */
+  flex-grow: 1;
 }
 
 .sticky #top {
   text-align: center;
-  padding-bottom: 20px;
+  padding: 15px 0;
   font-weight: 400;
   border-bottom: 1px solid #9ea5a5;
 }
@@ -45,9 +46,25 @@ body {
 
 .container {
   flex-grow: 2;
-  padding: 20px;
+  padding: 0 20px;
+  width: 85%;
 }
 
 table {
   width: 100%;
+  border: 1px solid #9ea5a5;
+  table-layout: fixed;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.table-header {
+  padding: 20px 0;
+  font-weight: 400;
 }
