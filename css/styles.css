@@ -44,6 +44,7 @@ body {
 .container {
   padding: 20px 20px;
   margin-left: 300px;
+  overflow-y: auto;
 }
 
 table {
